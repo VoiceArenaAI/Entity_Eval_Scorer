@@ -1,7 +1,7 @@
 import re
 import unicodedata
 
-RELAXED_FORMS = {"person_name", "email_url", "address"}
+RELAXED_FORMS = {"person_name", "email_url", "address", "org_brand", "place", "technical_term"}
 
 ARTIFACT_RE = re.compile(r"<\|[^|]*\|>|\[[^\]]{0,40}\]|[\u2047\ufffd\u3002\u3001\uff0c\u300c\u300d\u300a\u300b]"
                          r"|[\U0001F000-\U0001FAFF\u2600-\u27BF\uFE0F]")
